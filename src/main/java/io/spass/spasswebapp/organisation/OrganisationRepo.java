@@ -1,10 +1,10 @@
-package io.spass.spasswebapp.organisations;
+package io.spass.spasswebapp.organisation;
 
 import org.springframework.data.repository.CrudRepository;
 
 import java.util.List;
 
-public interface OrganisationsRepo extends CrudRepository<Organisation, Long> {
+public interface OrganisationRepo extends CrudRepository<Organisation, Long> {
 
     List<Organisation> findByOrganisationName(String organisationName);
 
