@@ -8,7 +8,7 @@ import java.util.List;
 @Repository
 public interface OrganisationRepo extends JpaRepository<Organisation, Long> {
 
-    List<Organisation> findByOrganisationName(String name);
+    List<Organisation> findByName(String name);
 
     Organisation findById(long id);
 }
