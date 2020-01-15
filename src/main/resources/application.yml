@@ -9,5 +9,18 @@ keycloak:
 spring:
   security:
     user:
-      name: user
+      name: admin
       password: pass
+  datasource:
+    url: jdbc:postgresql://localhost:5432/spass_db_dev
+    username: admin
+    password: pass
+    hikari:
+      connection-timeout: 20000
+      maximum-pool-size: 5
+
+
+
+
+
+# PostgreSQL
